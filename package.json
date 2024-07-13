@@ -2,15 +2,19 @@
   "name": "music_nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nandini80.github.io/MusicSchool/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "next build && next export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.13",
+    "gh-pages": "^6.1.1",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.4",
     "react": "^18",
